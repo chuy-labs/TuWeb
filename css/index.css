@@ -28,6 +28,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /* Globales */
@@ -106,12 +107,15 @@ img {
 /* Header */
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .header--title {
     color: var(--blanco);
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 130%;
 }
 
 .header--title__svg {
@@ -127,5 +131,79 @@ img {
 
 .header--nav__link {
     color: var(--blanco);
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 143.2%;
     margin: 0.4rem;
+}
+
+
+/* Hero */
+.hero {
+    width:  100%;
+    position: relative;
+}
+
+/* @media (min-width: 768px) {
+    .hero {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        width: 25%;
+    }
+} */
+
+.hero-container {
+    width: 40%;
+    position: absolute;
+    left: 20rem;
+}
+
+.hero--title {
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 130%;
+    color: var(--blanco);
+    /* width: 40%; */
+}
+
+.button {
+    border: none;
+    border-radius: 3rem;
+    color: var(--blanco);
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 143.2%;
+    height: 5rem;
+    text-align: center;
+    width: 20rem;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.hero--buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 6rem auto;
+    width: 60%;
+}
+
+.hero--buttons__hire {
+    background: rgba(255, 255, 255, 0.4);
+    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); */
+    /* backdrop-filter: blur(2.3rem); */
+}
+
+.hero--buttons__hire:hover {
+    /* Animation */
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.hero--buttons__about {
+    background: linear-gradient(107.21deg, #C961DE 24.43%, #2954A3 68.95%);
 }
