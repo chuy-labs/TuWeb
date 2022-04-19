@@ -141,7 +141,10 @@ img {
 /* Hero */
 .hero {
     width:  100%;
+    height: auto;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* @media (min-width: 768px) {
@@ -158,6 +161,7 @@ img {
 
 .hero-container {
     width: 40%;
+    height: auto;
     position: absolute;
     left: 20rem;
 }
@@ -206,4 +210,12 @@ img {
 
 .hero--buttons__about {
     background: linear-gradient(107.21deg, #C961DE 24.43%, #2954A3 68.95%);
+}
+
+.trail { /* className for the trail elements */
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-radius: 3px;
+    background: rgb(60, 85, 170);
 }
