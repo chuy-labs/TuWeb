@@ -116,10 +116,12 @@ img {
     font-weight: 700;
     font-size: 4.8rem;
     line-height: 130%;
+    margin: 2rem 0 2rem 0;
 }
 
 .header--title__svg {
     /* Por definir */
+
 }
 
 .header--nav {
@@ -131,18 +133,21 @@ img {
 
 .header--nav__link {
     color: var(--blanco);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.7rem;
     line-height: 143.2%;
     margin: 0.4rem;
 }
 
+.header--nav__link:hover {
+    text-shadow: 1px 1px 15px #ffffff;
+}
 
 /* Hero */
 .hero {
     width:  100%;
     height: auto;
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: space-between;
 }
@@ -161,8 +166,8 @@ img {
 
 .hero-container {
     width: 40%;
-    height: auto;
-    position: absolute;
+    position: relative;
+    margin-top: 8rem;
     left: 20rem;
 }
 
@@ -178,7 +183,7 @@ img {
     border: none;
     border-radius: 3rem;
     color: var(--blanco);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.7rem;
     line-height: 143.2%;
     height: 5rem;
@@ -188,7 +193,18 @@ img {
 
 .button:hover {
     cursor: pointer;
+
+    /* animation: btnHov 5s ease-in-out; */
 }
+
+/* @keyframes btnHov {
+    0% {
+        box-shadow: 0px 0px 0px .8rem rgba(255, 255, 255, 0.2);
+    }
+    100% {
+        box-shadow: 0px 0px 2px .8rem rgba(255, 255, 255, 0.2);
+    }
+} */
 
 .hero--buttons {
     display: flex;
@@ -199,23 +215,30 @@ img {
 
 .hero--buttons__hire {
     background: rgba(255, 255, 255, 0.4);
-    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); */
-    /* backdrop-filter: blur(2.3rem); */
 }
 
 .hero--buttons__hire:hover {
     /* Animation */
     background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 20px #ffffff;
 }
 
 .hero--buttons__about {
     background: linear-gradient(107.21deg, #C961DE 24.43%, #2954A3 68.95%);
 }
 
-.trail { /* className for the trail elements */
-    position: absolute;
-    height: 6px;
-    width: 6px;
-    border-radius: 3px;
-    background: rgb(60, 85, 170);
+.hero--buttons__about:hover {
+    box-shadow: 0px 0px 20px #2954A3;
 }
+
+.hero--images {
+    width: 100rem;
+}
+
+/* .trail { /* className for the trail elements /
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: linear-gradient(107.21deg, #C961DE 24.43%, #2954A3 68.95%);
+} */

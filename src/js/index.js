@@ -50,10 +50,11 @@ Dot.prototype.draw = function() {
 };
 
 // Creates the Dot objects, populates the dots array
-for (var i = 0; i < 15; i++) {
+for (var i = 0; i < 10; i++) {
     var d = new Dot();
     dots.push(d);
 }
+
 
 // This is the screen redraw function
 function draw() {
