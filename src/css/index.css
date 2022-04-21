@@ -120,10 +120,10 @@ img {
     margin: 2rem 0 2rem 0;
 }
 
-.header--title__svg {
+/* .header--title__svg {
     /* Por definir */
 
-}
+/* } */
 
 .header--nav {
     display: flex;
@@ -137,10 +137,12 @@ img {
     font-size: 1.7rem;
     line-height: 143.2%;
     margin: 0.4rem;
+    text-shadow: none;
+    transition: text-shadow 500ms ease;
 }
 
 .header--nav__link:hover {
-    text-shadow: 1px 1px 15px #ffffff;
+    text-shadow: 0rem 0rem 2rem #ffffff;
 }
 
 /* Hero */
@@ -149,6 +151,7 @@ img {
     /* position: absolute; */
     display: flex;
     justify-content: space-between;
+    height: auto;
 }
 
 /* @media (min-width: 768px) {
@@ -166,8 +169,8 @@ img {
 .hero-container {
     width: 40%;
     position: relative;
-    margin-top: 8rem;
     left: 20rem;
+    top: 8rem;
 }
 
 .hero--title {
@@ -175,6 +178,15 @@ img {
     font-weight: bold;
     line-height: 130%;
     /* width: 40%; */
+}
+
+.hero--images {
+    width: 116rem;
+    background-image: url(../img/Ilustration_bottom.svg);
+    background-position: 20rem -20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80.8rem;
 }
 
 .button {
@@ -191,7 +203,6 @@ img {
 
 .button:hover {
     cursor: pointer;
-
     /* animation: btnHov 5s ease-in-out; */
 }
 
@@ -213,6 +224,9 @@ img {
 
 .hero--buttons__hire {
     background: rgba(255, 255, 255, 0.4);
+    box-shadow: none;
+    transition: background 200ms ease;
+    transition: box-shadow 300ms ease;
 }
 
 .hero--buttons__hire:hover {
@@ -223,15 +237,14 @@ img {
 
 .hero--buttons__about {
     background: linear-gradient(107.21deg, #C961DE 24.43%, #2954A3 68.95%);
+    box-shadow: none;
+    transition: box-shadow 300ms ease;
 }
 
 .hero--buttons__about:hover {
     box-shadow: 0px 0px 20px #2954A3;
 }
 
-.hero--images {
-    width: 50%;
-}
 
 /* .trail { /* className for the trail elements /
     position: absolute;
@@ -243,19 +256,32 @@ img {
 
 /* About us */
 .about {
-    display: block;
-    margin-top: -15rem;
-    margin-left: 25rem;
-    width: 100vw;
-}
-
-.about--images {
-    width: 95%;
-    position: absolute;
+    background-image: url(../img/bolota_con_circulo_final_xd.svg);
+    height: 120.3rem;
+    width: 120.3rem;
+    margin: -20rem auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .about--info {
-    position: relative;
-    left: 47rem;
-    top: 35rem;
+    margin-top: -40rem;
+    margin-left: 5rem;
+}
+
+.about--info__link {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 3rem;
+    padding: 1.5rem 4rem;
+    box-shadow: none;
+
+    transition: background 200ms ease;
+    transition: box-shadow 500ms ease;
+}
+
+.about--info__link:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 20px #ffffff;
 }
