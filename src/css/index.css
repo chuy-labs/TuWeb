@@ -267,8 +267,18 @@ img {
 }
 
 .about--info {
-    margin-top: -40rem;
+    margin-top: -20%;
     margin-left: 5rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about--info__text {
+    max-width: 50%;
+    margin: 2rem auto 5rem;
 }
 
 .about--info__link {
@@ -276,6 +286,7 @@ img {
     border-radius: 3rem;
     padding: 1.5rem 4rem;
     box-shadow: none;
+    width: 15rem;
 
     transition: background 200ms ease;
     transition: box-shadow 500ms ease;
@@ -307,8 +318,7 @@ img {
     padding: 5rem;
     display: flex;
     justify-content: space-evenly;
-    background: rgba(47, 47, 138, 0.6);
-    backdrop-filter: blur(20rem);
+    background: rgba(47, 47, 138, 0.355);
     border-radius: 3rem;
 }
 
@@ -333,8 +343,7 @@ img {
     border: none;
     padding: 1rem;
     border-radius: 1rem;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(200px);
+    background: rgba(255, 255, 255, 0.205);
 }
 
 .campo-input::placeholder {
@@ -350,4 +359,65 @@ img {
     padding: 1rem 1.5rem;
     color: var(--blanco);
     margin-left: 10rem;
+
+    transition: box-shadow 300ms ease;
+}
+
+.contact-button:hover {
+    box-shadow: 0px 0px 20px #2954A3;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 55rem;
+    background: rgba(28, 28, 101, 0.531);
+}
+
+.footer--image {
+    position: relative;
+    top: -20rem;
+}
+
+.footer--info {
+    width: 100%;
+    margin: -30rem auto 0 auto;
+    height: 10rem;
+    text-align: center;
+}
+
+.footer--info__nav {
+    margin: 0 auto 7rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+
+.footer--info__media {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+}
+
+.separator {
+    display: block;
+    width: 150rem;
+    height: .5rem;
+    margin: 8rem auto 0;
+
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.footer--info__firm {
+    height: 10rem;
+    text-align: end;
+    margin-right: 10rem;
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 143.2%;
+
+    color: rgba(255, 255, 255, 0.7);
 }
