@@ -326,6 +326,16 @@ img {
     width: 35%;
 }
 
+.contact-texts p {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.contact-texts p span {
+    margin-right: 1rem;
+}
+
 /* Formulario */
 .campo {
     display: flex;
@@ -344,6 +354,7 @@ img {
     padding: 1rem;
     border-radius: 1rem;
     background: rgba(255, 255, 255, 0.205);
+    color: var(--blanco);
 }
 
 .campo-input::placeholder {
