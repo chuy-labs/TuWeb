@@ -394,6 +394,23 @@ img {
     width: 50%;
 }
 
+.footer--nav__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: none;
+    transition: text-shadow 500ms ease;
+}
+
+.footer--nav__link:hover {
+    text-shadow: -1rem 0rem 4rem #ffffff;
+}
+
+.footer--nav__link span {
+    margin-right: .5rem;
+}
+
+
 .footer--info__media {
     margin: 0 auto;
     display: flex;
@@ -406,7 +423,7 @@ img {
     display: block;
     width: 150rem;
     height: .5rem;
-    margin: 8rem auto 0;
+    margin: 10rem auto 0;
 
     background: rgba(255, 255, 255, 0.15);
 }
@@ -420,4 +437,25 @@ img {
     line-height: 143.2%;
 
     color: rgba(255, 255, 255, 0.7);
+}
+
+.media {
+    border: none;
+    border-radius: 50%;
+}
+
+.media--insta:hover {
+    box-shadow: 0px 0px 20px #c13584;
+}
+
+.media--twt:hover {
+    box-shadow: 0px 0px 20px #1DA1F2;
+}
+
+.media--fb:hover {
+    box-shadow: 0px 0px 20px #3B5998;
+}
+
+.media--tktk:hover {
+    box-shadow: 0px 0px 20px #1A121F;
 }
