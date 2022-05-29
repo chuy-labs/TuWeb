@@ -1,27 +1,5 @@
 const hero = document.querySelector('#hero');
 
-// document.addEventListener('DOMContentLoaded', () => {
-
-
-//     hero.addEventListener('mousemove', dibujarHero);
-// });
-
-
-// function dibujarHero(e) {
-//     const cords = mouseCoords(e);
-
-
-
-//     console.log(cords)
-// }
-
-// function mouseCoords(event){
-//     return {
-//         clientX: event.clientX,
-//         clientY: event.clientY
-//     }
-// }
-
 // dots is an array of Dot objects,
 // mouse is an object used to track the X and Y position
    // of the mouse, set with a mousemove event listener below
