@@ -225,9 +225,13 @@ img {
 
 .hero--buttons {
     display: flex;
-    justify-content: space-between;
-    margin: 6rem auto;
-    width: 60%;
+    justify-content: space-around;
+    gap: 1rem;
+    width: 100%;
+}
+
+.hero--buttons .button {
+    width: 40%;
 }
 
 .hero--buttons__hire {
@@ -246,6 +250,7 @@ img {
 .hero--buttons__about {
     background: linear-gradient(107.21deg, #C961DE 24.43%, #2954A3 68.95%);
     box-shadow: none;
+
     transition: box-shadow 300ms ease;
 }
 
@@ -323,7 +328,7 @@ img {
 .contact-container {
     margin: 0 auto;
     /* Media QUERY */
-    width: 50%;
+    width: 70%;
     padding: 5rem;
     display: flex;
     justify-content: space-evenly;
@@ -378,7 +383,7 @@ img {
     text-align: center;
     padding: 1rem 1.5rem;
     color: var(--blanco);
-    margin-left: 10rem;
+    margin-left: 25rem;
 
     transition: box-shadow 300ms ease;
 }
@@ -455,6 +460,7 @@ img {
     font-size: 5rem;
     font-weight: 500;
     line-height: 143.2%;
+    user-select: none;
 
     color: rgba(255, 255, 255, 0.7);
 }
@@ -485,4 +491,87 @@ img {
 /* Página servicios */
 .servicios--hero {
     text-align: center;
+}
+
+@media (max-width: 1024px) {
+
+    .header {
+        padding: 0 1rem;
+    }
+
+    .hero-container {
+        width: 60%;
+        position: relative;
+        left: 13rem;
+        top: 6rem;
+        height: auto;
+    }
+
+    .button {
+        border: none;
+        border-radius: 3rem;
+        font-weight: 500;
+        font-size: 1.7rem;
+        line-height: 143.2%;
+        height: 5rem;
+        text-align: center;
+        padding: 1.1rem 0;
+        width: 20rem;
+    }
+
+    .hero--buttons {
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .hero--buttons .button {
+        width: 45%;
+    }
+
+    .hero--title {
+        font-size: 4rem;
+    }
+
+    .hero--images {
+        background-position:-10rem -25rem;
+    }
+
+
+    .about {
+        height: 120.4rem;
+        width: 120.4rem;
+        margin: -30rem auto 0 -13rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-container {
+        width: 75%;
+    }
+
+    .footer--info {
+        width: 100%;
+    }
+
+    .footer--info__nav {
+        margin: 0 auto 5rem auto;
+        width: 80%;
+    }
+
+    .footer--info__media {
+        width: 40%;
+    }
+
+
+    .footer--info__firm {
+        font-size: 300;
+        margin-right: 3rem;
+    }
+
+    .separator {
+        width: 95rem;
+    }
 }
