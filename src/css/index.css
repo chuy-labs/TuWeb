@@ -15,6 +15,11 @@ html {
     font-size: 62.5%;
 }
 
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
 *,
 *:before,
 *:after {
@@ -88,26 +93,62 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .header--title {
     font-weight: 700;
     font-size: 4.8rem;
     line-height: 130%;
-    margin: 2rem 0 2rem 10rem;
+    margin: 2rem 0 2rem 0;
 }
 
-/* .header--title__svg {
-    /* Por definir */
 
-/* } */
 
 .header--nav {
+    height: 10rem;
+    width: 100%;
     display: flex;
-    margin: 3rem;
-    justify-content: space-evenly;
-    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    margin: 0 0 0 -1rem;
+}
+
+.bar-btn {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 10rem;
+    left: 0rem;
+    background: rgba(0, 0, 0, .95);
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-menu li {
+    display: none;
+    line-height: 3rem;
+    margin: 5rem 0;
+    transition: all .5s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li {
+    display: block;
 }
 
 .header--nav__link {
@@ -894,14 +935,13 @@ img {
 
 @media (max-width: 768px) {
 
-    body {
-        overflow-x: hidden;
+    .header {
+        margin-left: 1.4rem;
     }
 
     .header--title {
         font-size: 3rem;
         line-height: 120%;
-        margin: 2rem 0 2rem 4rem;
     }
 
     .header--nav__link {
@@ -920,9 +960,9 @@ img {
     }
 
     .about {
-        height: 80rem;
+        height: 100rem;
         width: 80rem;
-        margin: -10rem auto 0 -3rem;
+        margin: -15rem auto 10rem -3rem;
     }
 
     .contact-container {
@@ -959,6 +999,40 @@ img {
 
 }
 
-@media (max-width: 375px) {
-    
+@media (max-width: 425px) {
+
+}
+
+@media (min-width: 426px) {
+    .header--nav {
+        height: 10rem;
+        margin: 0;
+    }
+
+    .header--nav div {
+        display: flex;
+    }
+
+    .header--title {
+        margin: 0;
+    }
+
+    .bar-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        position: relative;
+        height: 10rem;
+        top: 0;
+        background: none;
+        transition: none;
+        margin: 0;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        line-height: 10rem;
+        margin: 0 1rem;
+    }
 }
