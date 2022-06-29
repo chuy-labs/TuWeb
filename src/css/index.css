@@ -34,7 +34,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 
 .app {
@@ -927,7 +927,6 @@ transform: translateX(0px);
 
     .about {
         height: 120.4rem;
-        width: 120.4rem;
         margin: -30rem auto 0 -13rem;
         display: flex;
         justify-content: center;
@@ -937,7 +936,6 @@ transform: translateX(0px);
 
     .about--info {
         height: 90rem;
-        width: 140rem;
         margin-top: -20rem;
     }
 
@@ -1032,7 +1030,6 @@ transform: translateX(0px);
 
     .about {
         height: 100rem;
-        width: 80rem;
         margin: -15rem auto 10rem -3rem;
     }
 
@@ -1162,7 +1159,6 @@ transform: translateX(0px);
 
     .about {
         background-image: url(../img/bolacel.svg);
-        width: 60rem;
         height: 60rem;
         background-size: cover;
         background-position: -8rem 0rem;
