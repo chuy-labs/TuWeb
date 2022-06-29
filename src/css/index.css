@@ -1120,6 +1120,64 @@ transform: translateX(0px);
         width: 95%;
     }
 
+    .contact-image {
+        background-position: -60rem -30rem;
+    }
+
+    .contact-container {
+        display: block;
+        padding: 1rem 5rem 3rem 5rem;
+    }
+
+    .contact-texts {
+        width: 85%;
+        text-align: center;
+    }
+
+.contact-texts p {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.contact-texts p span {
+    margin-right: 1rem;
+}
+
+/* Formulario */
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-label {
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;
+}
+
+.campo-input {
+    width: 100%;
+}
+
+.campo-input::placeholder {
+    color: var(--blanco);
+}
+
+.contact-button {
+    background: linear-gradient(105.95deg, #C961DE 24.79%, #2954A3 71.87%);
+    box-shadow: 0px 10px 20px rgba(7, 7, 26, 0.15);
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    color: var(--blanco);
+    margin-left: 25rem;
+
+    transition: box-shadow 300ms ease;
+}
+
     .footer--info {
         width: 100%;
     }
