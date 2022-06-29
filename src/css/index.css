@@ -1159,28 +1159,28 @@ transform: translateX(0px);
 
     .about {
         background-image: url(../img/bolacel.svg);
-        height: 60rem;
+        height: 40rem;
         background-size: cover;
-        background-position: -8rem 0rem;
+        background-position: 1rem 0rem;
     }
 
     .about--info__titulo {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     .about--info {
-        height: 30rem;
-        width: 50rem;
+        height: 20rem;
+        width: 40rem;
         font-size: 1rem;
-        margin-top: -7rem;
-        margin-left: -13.7rem;
+        margin-top: -5rem;
+        margin-left: 3rem;
     }
 
     .about--info__text {
         margin: 0;
         padding: 0;
-        margin-bottom: 3rem;
-        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        font-size: .8rem;
     }
 
     .about--info__link {
