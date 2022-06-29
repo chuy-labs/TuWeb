@@ -1184,6 +1184,7 @@ transform: translateX(0px);
         margin: 0;
         padding: 0;
         margin-bottom: 3rem;
+        font-size: 1.2rem;
     }
 
     .about--info__link {
