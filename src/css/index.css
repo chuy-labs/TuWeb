@@ -271,8 +271,8 @@ img {
 }
 
 .about--info {
-    height: 123rem;
-    width: 123rem;
+    height: auto;
+    width: auto;
     margin-top: -10%;
     margin-left: 5rem;
     padding: 5rem;
@@ -1029,13 +1029,12 @@ transform: translateX(0px);
     }
 
     .about {
-        height: 100rem;
-        margin: -15rem auto 10rem -3rem;
+        height: 120rem;
+        margin: -15rem 3rem 10rem -3rem;
     }
 
     .about--info {
         height: 90rem;
-        width: 140rem;
         margin-top: -20rem;
     }
 
@@ -1159,9 +1158,10 @@ transform: translateX(0px);
 
     .about {
         background-image: url(../img/bolacel.svg);
-        height: 40rem;
+        height: 50rem;
         background-size: cover;
-        background-position: 1rem 0rem;
+        background-position: -7rem -5rem;
+        margin: 0;
     }
 
     .about--info__titulo {
@@ -1170,10 +1170,9 @@ transform: translateX(0px);
 
     .about--info {
         height: 20rem;
-        width: 40rem;
         font-size: 1rem;
-        margin-top: -5rem;
-        margin-left: 3rem;
+        padding: 0;
+        margin: -12rem auto 5rem;
     }
 
     .about--info__text {
